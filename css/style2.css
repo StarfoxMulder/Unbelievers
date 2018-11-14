@@ -1,0 +1,275 @@
+body {
+  background-color: #000000;
+  /*"franklingothic-book" , "Franklin Gothic Medium" , "ITC Franklin Gothic"*/
+  /*font-stretch: condensed;
+    font-size: 18px;
+    font-weight: 500; */
+  font-family: "Franklin Gothic", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+.stretched {
+  font-family: "franklingothic-book";
+  font-stretch: condensed;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#superNav {
+  height: 150px;
+}
+#logoImg {
+  padding-top: 15px;
+  padding-left: 0px;
+  z-index: 9999;
+  max-height: 250px;
+  min-height: 200px;
+}
+#logoImg img {
+  z-index: 9999;
+  max-width: 250px;
+  margin-left: -23px;
+}
+#imgCarousel {
+  height: 150px;
+  padding: 0;
+  overflow: hidden;
+}
+#imgCarousel img {
+  max-height: 300px;
+}
+#imgCarousel p {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #29abe2;
+  margin-top: 9%;
+}
+
+.bluegrey {
+  background-color: #155570;
+  color: #fff;
+}
+.navbar-inverse {
+  height: 40px;
+  text-transform: uppercase;
+}
+.navbar-toggle {
+  margin-top: 3px;
+}
+.offsetHeader {
+  margin-left: 55px !important;
+  height: 40px;
+}
+#navbar ul {
+  height: 40px;
+  text-align: center;
+}
+#navbar ul li a {
+  height: 40px;
+  color: #fff;
+}
+#navbar ul li a:hover {
+  color: #9d9d9d;
+}
+#navbar ul li.active > a {
+  background-color: #29abe2;
+}
+/* Need to do some transitions effects to mask jerky behavior of dropdown */
+div#navbar.collapse.in,
+div#navbar.navbar-collapse.collapse.in {
+  z-index: 99999;
+  overflow-y: visible !important;
+}
+div#navbar.collapse.in ul.nav.navbar-nav,
+div#navbar.navbar-collapse.collapse.in ul {
+  background-color: #000;
+}
+div#navbar.collapse.in ul li,
+div#navbar.navbar-collapse.collapse.in ul li {
+  height: 60px;
+  background-color: #000;
+}
+#navbar.collapse.in ul li a,
+#navbar.navbar-collapse.collapse.in ul li a {
+  height: 60px;
+  height: 60px;
+  padding: 21px;
+  font-size: 18px;
+}
+#navbar.collapse.in ul li .active > a {
+  background-color: #29abe2;
+}
+#UPTitle {
+  display: none;
+  color: #29abe2;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.UPreferrer {
+  text-align: center;
+  border: 2px solid #29abe2;
+  color: #fff;
+}
+.UPreferrer span {
+  color: #29abe2;
+}
+.UPreferrer a {
+  text-decoration: none;
+  color: #337ab7;
+}
+.UPreferrer a:hover {
+  text-decoration: none;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+  background-color: #000;
+  border: 1px solid #337ab7;
+  background: #ccc;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+#sidebar-wrapper a {
+  text-decoration: none;
+}
+.sidebar-brand {
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.sidebar-brand h4 {
+  margin-top: 0px;
+  padding-top: 12px;
+  height: 40px;
+}
+.sidebar-nav {
+  list-style: none;
+}
+.sidebar-week {
+  text-align: center;
+  height: 27px;
+  color: #000;
+}
+
+#wrapper {
+  transition: all 0.4s ease 0s;
+}
+#page-content-wrapper {
+}
+
+.show {
+}
+.showRow {
+  margin-top: 20px;
+}
+.weekDiv {
+  border: 1px solid #155570;
+  padding: 0;
+}
+.showDiv {
+  border-bottom: 1px solid #155570;
+}
+.showWeek {
+  padding-left: 20px;
+  margin-top: 0px;
+  font-size: 20px;
+  padding: 10px;
+}
+.showTitle {
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+}
+.showDiv audio {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 99.8%;
+}
+
+.PollDiv {
+  max-width: 100%;
+  margin-left: 20px;
+}
+.pollQuestion {
+  font-size: 24px;
+  color: #fff;
+  font-style: italic;
+  margin-top: 13px;
+}
+.radio {
+  color: #fff;
+}
+.otherDiv {
+  margin-right: 20px;
+}
+.submit {
+  margin-left: 41%;
+  margin-bottom: 13px;
+  background-color: #155570;
+  color: #fff;
+}
+
+/* at 992px the tagline breaks /// (min-width: 767px) and */
+@media (max-width: 1200px) {
+  #imgCarousel {
+    /*  margin-left: 2%; */
+  }
+  .offsetHeader {
+    margin-left: 0;
+  }
+  #navbar ul li a {
+    max-width: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #imgCarousel {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+}
+@media (max-width: 768px) {
+  #superNav {
+    display: none;
+  }
+  .offsetHeader {
+    margin-left: 15px !important;
+  }
+  .bluegrey {
+    background-color: #155570;
+    color: #fff;
+    z-index: 99999;
+  }
+  #UPTitle {
+    display: block;
+  }
+  .UPreferrer {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,5 @@
+Start MongoDB
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
+
+Connect client to MongoDB
+"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"

@@ -1,0 +1,148 @@
+body {
+  background-color: #000;
+}
+
+#superNav {
+  height: 150px;
+}
+#logoImg {
+  padding-top: 15px;
+  z-index: 9999;
+  max-height: 250px;
+  min-height: 200px;
+}
+#logoImg img {
+  z-index: 9999;
+  max-width: 250px;
+}
+#imgCarousel {
+  max-height: 150px;
+  padding: 0;
+  overflow: hidden;
+}
+#imgCarousel img {
+  max-height: 300px;
+}
+#imgCarousel h2 {
+  text-transform: capitalize;
+  color: #29abe2;
+  margin-top: 9%;
+}
+
+.bluegrey {
+  background-color: #155570;
+  color: #fff;
+}
+.navbar-inverse {
+  height: 50px;
+}
+.offsetHeader {
+  margin-left: 55px !important;
+}
+#UPTitle {
+  color: #29abe2;
+}
+
+.UPreferrer {
+  text-align: center;
+  border: 2px solid #29abe2;
+  color: #fff;
+}
+.UPreferrer span {
+  color: #29abe2;
+}
+.UPreferrer a {
+  text-decoration: none;
+  color: #337ab7;
+}
+.UPreferrer a:hover {
+  text-decoration: none;
+}
+
+#sidebar-wrapper {
+  background-color: #000;
+  border: 1px solid 337ab7;
+}
+.sidebar-brand {
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.sidebar-brand h4 {
+  margin-top: 0px;
+  padding-top: 12px;
+  height: 40px;
+}
+.sidebar-week {
+  text-align: center;
+  height: 27px;
+  color: #000;
+}
+#sidebar-wrapper a {
+  text-decoration: none;
+}
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #ccc;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+#page-content-wrapper {
+  width: 100%;
+}
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+}
+.showRow {
+  margin-top: 20px;
+}
+.weekDiv {
+  border: 1px solid #155570;
+  padding: 0;
+}
+.showDiv {
+  border-bottom: 1px solid #155570;
+}
+.showWeek {
+}
+.showTitle {
+  color: #fff;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .UPreferrer {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  #superNav {
+    display: none;
+  }
+  .offsetHeader {
+    margin-left: 15px !important;
+  }
+  .UPreferrer {
+    margin-left: 0;
+  }
+}
