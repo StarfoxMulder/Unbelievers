@@ -1,0 +1,49 @@
+{
+  "name": "unbelieverspodcast",
+  "version": "0.1.0",
+  "description": "The Unbelievers Podcast is a Paranormal Comedy Podcast created in 2018 by Unbelievers Russel Ryan, Jude Prestia, Drea Mora, and Producer Rob Okey. Following in the footsteps of it's predecessor (The Unbelievable Podcast), The Unbelievers Podcast will carry on the tradition of analyzing the 'Unbelievable' as we CONTINUE to Unlearn Everything We Know!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarfoxMulder/Unbelievers.git"
+  },
+  "keywords": [
+    "unbelievers",
+    "podcast",
+    "aliens",
+    "monsters",
+    "bigfoot",
+    "paranormal",
+    "cheerio",
+    "express",
+    "handlebars",
+    "mongoose",
+    "mongodb"
+  ],
+  "author": "Charles Jude Prestia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StarfoxMulder/Unbelievers/issues"
+  },
+  "homepage": "https://github.com/StarfoxMulder/Unbelievers#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.0",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.0",
+    "express-stormpath": "^3.1.9",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.1",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "request": "^2.79.0",
+    "static-favicon": "^2.0.0-alpha",
+    "vue": "^2.2.1"
+  }
+}
