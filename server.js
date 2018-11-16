@@ -11,6 +11,7 @@ var cheerio = require("cheerio");
 var Promise = require("bluebird");
 var app = express();
 var PORT = process.env.PORT || 3000;
+let Poll = require("./../models/poll");
 
 mongoose.Promise = Promise;
 

@@ -214,7 +214,6 @@ div#navbar.navbar-collapse.collapse.in ul li {
 
 .PollDiv {
   max-width: 100%;
-  margin-left: 20px;
 }
 .pollQuestion {
   font-size: 24px;
@@ -228,11 +227,51 @@ div#navbar.navbar-collapse.collapse.in ul li {
 .otherDiv {
   margin-right: 20px;
 }
-.submit {
+.pollSubmit {
   margin-left: 41%;
   margin-bottom: 13px;
   background-color: #155570;
   color: #fff;
+}
+.thanks {
+  font-size: 20px;
+  color: #155570;
+  margin-left: 32%;
+}
+.pds-box,
+.PDS_Poll {
+  transform: scale(0.98);
+}
+.pds-input-label {
+  width: 400px;
+}
+.pds-textfield {
+  width: 100% !important;
+}
+
+/***** Contact PAge *****/
+.hosts {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.hostsBlock {
+  border: 1px solid #155570;
+}
+.w25 {
+  width: 24%;
+  display: inline-block;
+}
+.hostName {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+}
+.hostPic {
+  max-width: 220px;
 }
 
 /* at 992px the tagline breaks /// (min-width: 767px) and */
@@ -246,13 +285,29 @@ div#navbar.navbar-collapse.collapse.in ul li {
   #navbar ul li a {
     max-width: 100px;
   }
+  .PDS_Poll {
+    transform: scale(0.98);
+  }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+
+@media (min-width: 993px) and (max-width: 1200px) {
   #imgCarousel {
     margin-left: 10%;
   }
+  .PDS_Poll {
+    transform: scale(0.98);
+  }
+  .pds-box {
+    width: 515px !important;
+  }
 }
-@media (min-width: 767px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .pds-box {
+    width: 495px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
 }
 @media (max-width: 768px) {
   #superNav {
@@ -271,5 +326,8 @@ div#navbar.navbar-collapse.collapse.in ul li {
   }
   .UPreferrer {
     margin-left: 0;
+  }
+  .pds-box {
+    margin-left: 50px !important;
   }
 }

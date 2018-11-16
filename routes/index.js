@@ -5,15 +5,34 @@ var app = express();
 var logger = require("morgan");
 var Promise = require("bluebird");
 var request = require("request");
-var cheerio = require("cheerio");
+let Poll = require("./../models/poll");
 
 // var helper = require("../public/helpers.js");
 
 /////  Routes  \\\\\
 /////  ======  \\\\\
 
+/*
 router.get("/", function(req, res) {
   res.render("index");
+});
+*/
+router.get("/", function(req, res) {
+  Poll.find().exec((err, polls) => {
+    res.render("index", { polls: polls });
+  });
+});
+
+router.get("/contact", function(req, res) {
+  res.render("contact");
+});
+
+router.get("/donate", function(req, res) {
+  res.render("donate");
+});
+
+router.get("/soundboard", function(req, res) {
+  res.render("soundboard");
 });
 
 /*
@@ -47,18 +66,6 @@ router.get("/news2", function(req,res) {
 //   });
 // });
 
-router.get("/events", function(req, res) {
-  res.render("events");
-});
-
-router.get("/donate", function(req, res) {
-  res.render("donate");
-});
-
-router.get("/media", function(req, res) {
-  res.render("media");
-});
-
 /*
 router.post("/register", function(req, res) {
   console.log("req.body.userName == "+req.body.userName);
@@ -71,9 +78,5 @@ router.post("/register", function(req, res) {
   }))
 });
 */
-
-router.get("/family", function(req, res) {
-  res.render("family");
-});
 
 module.exports = router;
