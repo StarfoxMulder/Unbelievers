@@ -18,9 +18,7 @@ router.get("/", function(req, res) {
 });
 */
 router.get("/", function(req, res) {
-  Poll.find().exec((err, polls) => {
-    res.render("index", { polls: polls });
-  });
+  res.render("index");
 });
 
 router.get("/contact", function(req, res) {
