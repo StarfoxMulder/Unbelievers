@@ -1,3 +1,5 @@
+/*
+
 require("mongoose").connect("mongodb://localhost/unbelievers");
 
 const topics = [
@@ -42,3 +44,6 @@ Poll.remove({})
     console.log(e);
     process.exit(1);
   });
+
+
+  */

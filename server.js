@@ -7,7 +7,6 @@ var exphbs = require("express-handlebars");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 var request = require("request");
-var cheerio = require("cheerio");
 var Promise = require("bluebird");
 var app = express();
 var PORT = process.env.PORT || 3000;

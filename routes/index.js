@@ -5,7 +5,7 @@ var app = express();
 var logger = require("morgan");
 var Promise = require("bluebird");
 var request = require("request");
-let Poll = require("./../models/poll");
+//let Poll = require("./../models/poll");
 
 // var helper = require("../public/helpers.js");
 
