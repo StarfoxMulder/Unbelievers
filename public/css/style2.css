@@ -402,3 +402,9 @@ div#navbar.navbar-collapse.collapse.in ul li {
     margin-left: 50px !important;
   }
 }
+
+@media (max-width: 500px) {
+  .hostPic {
+    max-width: 140px;
+  }
+}
