@@ -324,6 +324,10 @@ div#navbar.navbar-collapse.collapse.in ul li {
 .icon:hover {
   opacity: 0.5;
 }
+.weekDiv {
+  margin-top: 15px;
+}
+
 /* at 992px the tagline breaks /// (min-width: 767px) and */
 @media (max-width: 1200px) {
   #imgCarousel {
