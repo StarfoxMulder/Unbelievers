@@ -124,6 +124,9 @@ div#navbar.navbar-collapse.collapse.in ul li {
 #navbar.collapse.in ul li .active > a {
   background-color: #29abe2;
 }
+#polls > a {
+  cursor: not-allowed;
+}
 #UPTitle {
   display: none;
   color: #29abe2;
