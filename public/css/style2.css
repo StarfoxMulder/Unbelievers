@@ -52,6 +52,8 @@ footer {
   height: 150px;
   padding: 0;
   overflow: hidden;
+  /* Overriding the default col-md-offset-2 */
+  margin-left: 15%;
 }
 #imgCarousel img {
   max-height: 300px;
@@ -80,7 +82,8 @@ footer {
   margin-top: 3px;
 }
 .offsetHeader {
-  margin-left: 55px !important;
+  /* updated from 55px */
+  margin-left: 3.3% !important;
   height: 40px;
 }
 #navbar ul {
@@ -257,6 +260,7 @@ div#navbar.navbar-collapse.collapse.in ul li {
 .pds-box,
 .PDS_Poll {
   transform: scale(0.98);
+  width: 100% !important;
 }
 .pds-input-label {
   width: 400px;
@@ -406,7 +410,7 @@ div#navbar.navbar-collapse.collapse.in ul li {
     margin-left: 0;
   }
   .pds-box {
-    margin-left: 50px !important;
+    /*  margin-left: 50px !important; */
   }
 }
 
