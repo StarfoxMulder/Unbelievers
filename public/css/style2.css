@@ -261,6 +261,8 @@ div#navbar.navbar-collapse.collapse.in ul li {
 .PDS_Poll {
   transform: scale(0.98);
   width: 100% !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .pds-input-label {
   width: 400px;
@@ -410,6 +412,8 @@ div#navbar.navbar-collapse.collapse.in ul li {
     margin-left: 0;
   }
   .pds-box {
+    margin-top: 5px;
+    margin-bottom: 5px;
     /*  margin-left: 50px !important; */
   }
 }
