@@ -1,5 +1,17 @@
 //window.onload = function() {
-$(document).ready(function() {});
+$(document).ready(function() {
+  function changeInputLength() {
+    if ($("input.css-textfield")) {
+      $("input.css-textfield").attr("maxlength", 140);
+      console.log("length changed to 140");
+    } else {
+      setTimeout(changeInputLength, 500);
+      console.log("changeInputLength setTimeout triggered");
+    }
+  }
+
+  changeInputLength();
+});
 
 /*
 $(".submit").click(function(event) {
