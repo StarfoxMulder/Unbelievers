@@ -21,9 +21,13 @@ app.use(methodOverride("_method"));
 //Body-Parser
 app.use(logger("dev"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(bodyParser.json({
+  type: "application/vnd.api+json"
+}));
 
 //Setting up handlebars
 
@@ -44,21 +48,23 @@ if (process.env.MONGODB_URI) {
 }
 
 var db = mongoose.connection;
-db.on("error", function(error) {
+db.on("error", function (error) {
   console.log("Mongoose Error: ", error);
 });
 // Once logged in to the db through mongoose, log a success message
-db.once("open", function() {
+db.once("open", function () {
   /////  DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/4.x/docs/connections.html#use-mongo-client
+  ///// Update:  This is apparently not the line of code where the error is located
   console.log("Mongoose connection successful.");
 });
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App listening on PORT " + PORT);
 });
 
 var routes = require("./routes/index.js");
 app.use("/", routes);
+app.use("/test", routes);
 app.use("/polls", routes);
 app.use("/soundboard", routes);
 app.use("/contact", routes);

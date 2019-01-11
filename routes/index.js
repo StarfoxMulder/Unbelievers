@@ -1,11 +1,12 @@
 var express = require("express");
 var router = express.Router();
 var app = express();
-//var Article = require("../models/Article.js");
 var logger = require("morgan");
 var Promise = require("bluebird");
 var request = require("request");
 //let Poll = require("./../models/poll");
+//var Episode = require("../../models/episode.js");
+
 
 // var helper = require("../public/helpers.js");
 
@@ -17,19 +18,32 @@ router.get("/", function(req, res) {
   res.render("index");
 });
 */
-router.get("/", function(req, res) {
+router.get("/", function (req, res) {
   res.render("index");
 });
 
-router.get("/contact", function(req, res) {
+/*
+router.get("/test", function(req, res) {
+  Episode.find()
+    .sort({ index: -1 })
+    .exec(function(err, found) {
+      if (err) {
+      } else {
+        res.render("index2", { found: found });
+      }
+    });
+});
+*/
+
+router.get("/contact", function (req, res) {
   res.render("contact");
 });
 
-router.get("/donate", function(req, res) {
+router.get("/donate", function (req, res) {
   res.render("donate");
 });
 
-router.get("/soundboard", function(req, res) {
+router.get("/soundboard", function (req, res) {
   res.render("soundboard");
 });
 
