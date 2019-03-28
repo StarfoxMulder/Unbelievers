@@ -149,9 +149,6 @@ div#navbar.navbar-collapse.collapse.in ul li {
   background-color: #29abe2;
 }
 
-#polls>a {
-  cursor: not-allowed;
-}
 
 #UPTitle {
   display: none;
@@ -424,6 +421,10 @@ div#navbar.navbar-collapse.collapse.in ul li {
   .PDS_Poll {
     transform: scale(0.98);
   }
+
+  #navbar ul {
+    margin-left: 75px;
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -446,7 +447,7 @@ div#navbar.navbar-collapse.collapse.in ul li {
 
 @media (min-width: 1200px) {
   #navbar ul {
-    margin-left: 123px;
+    margin-left: 145px;
   }
 }
 
@@ -457,18 +458,34 @@ div#navbar.navbar-collapse.collapse.in ul li {
 
   .navbar-nav {
     margin-top: -50px;
+    float: none;
   }
 
   #soundboardLi {
-    margin-top: 10px;
     margin-right: 20px;
   }
 
   #contactLi {
-    margin-top: 10px;
     margin-right: 10px;
   }
+
+  #sosLi {
+    margin-top: -10px;
+  }
+
+  #unlearnLi {
+    margin-top: -10px;
+  }
+
 }
+
+/*
+@media (min-width: 768px) {
+  #navbar ul {
+    margin-left: 75px;
+  }
+}
+*/
 
 @media (max-width: 768px) {
   #superNav {
