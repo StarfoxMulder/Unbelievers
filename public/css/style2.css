@@ -306,6 +306,26 @@ div#navbar.navbar-collapse.collapse.in ul li {
   margin-bottom: 5px;
 }
 
+.pds-box-outer {
+  background-color: #222 !important;
+  border-radius: 12px;
+  border: 1px solid #313131;
+}
+
+.pds-question-top {
+  font-size: 24px !important;
+  line-height: 120% !important;
+  color: #eee !important;
+  font-weight: 700 !important;
+  padding: 5px 0 20px !important;
+  position: relative !important;
+}
+
+.pds-answer-span {
+  color: #fff;
+  font-size: 18px;
+}
+
 .pds-input-label {
   width: 400px;
 }
