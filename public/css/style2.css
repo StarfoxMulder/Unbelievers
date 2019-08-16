@@ -302,6 +302,7 @@ div#navbar.navbar-collapse.collapse.in ul li {
 .PDS_Poll {
   transform: scale(0.98);
   width: 100% !important;
+  max-width: 100% !important;
   margin-top: 5px;
   margin-bottom: 5px;
 }
