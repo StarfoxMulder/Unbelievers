@@ -425,6 +425,10 @@ div#navbar.navbar-collapse.collapse.in ul li {
   margin-top: 15px;
 }
 
+#hideOld {
+  display: none;
+}
+
 /* at 992px the tagline breaks /// (min-width: 767px) and */
 @media (max-width: 1200px) {
   #imgCarousel {
