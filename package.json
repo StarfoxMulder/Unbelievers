@@ -33,7 +33,7 @@
     "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "express-session": "^1.15.0",
     "express-stormpath": "^3.1.9",
     "method-override": "^2.3.7",
